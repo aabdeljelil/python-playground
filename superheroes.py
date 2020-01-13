@@ -27,7 +27,7 @@ with open('superheroes.csv', 'w') as f:
 	members = superheroes['members']
 	for member in members: 
 
-	# Define variables 
+		# Define variables 
 		name = member['name']
 		age = member['age']
 		secret_identity = member['secretIdentity']
@@ -38,7 +38,6 @@ with open('superheroes.csv', 'w') as f:
 		secret_base = superheroes['secretBase']
 		active = superheroes['active']
 
-# Prints those powers to the terminal
+		# Writes all of the headers in a table in a csv file
 		row = [name, age, secret_identity, powers, squad_name,home_town,formed,secret_base,active]
 		writer.writerow(row)
-		
